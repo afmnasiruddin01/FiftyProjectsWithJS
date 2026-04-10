@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --line-border-fill:#225a92;
+  --line-border-empty:#e0e0e0;
+}
 * {
   box-sizing: border-box;
 }
@@ -17,6 +22,7 @@ body {
 
 .container {
   text-align: center;
+
 }
 .progress-container {
   display: flex;
@@ -28,25 +34,67 @@ body {
 }
 .progress-container::before{
     content: "";
-    background-color: #d9dde1;
+    background-color: var(--line-border-empty);
+    height: 4px;
+    width: 100%;
     position:absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    height: 4px;
-    width: 100%;
     z-index: -1;
 
 }
 
 .progress {
-    background-color: #3498db;
+    background-color: var(--line-border-fill);
+    height: 4px;
+    width: 30%;
     position:absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    height: 4px;
-    width: 0%;
     z-index: -1;
     transition: 3s ease;
+}
+
+.circle {
+  background-color: var(--line-border-empty);
+  color: rgb(75, 73, 73);
+  border: 3px solid var(--line-border-empty);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s ease;
+}
+
+.circle.active {
+border-color: var(--line-border-fill);
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: var(--line-border-empty);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 20px;
+
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+ outline: 0;
+}
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  color: #898787;
+  cursor: not-allowed;
 }
