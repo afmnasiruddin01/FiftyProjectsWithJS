@@ -1,1 +1,1 @@
-# FiftyProjectsWithJS
+I have done 50 type of HTML, CSS and javascripts for understanding the basics of the web desiging.
