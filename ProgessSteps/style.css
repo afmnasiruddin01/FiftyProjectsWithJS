@@ -48,13 +48,13 @@ body {
 .progress {
     background-color: var(--line-border-fill);
     height: 4px;
-    width: 30%;
+    width: 0%;
     position:absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     z-index: -1;
-    transition: 3s ease;
+    transition: 1s ease;
 }
 
 .circle {
@@ -67,7 +67,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .circle.active {
