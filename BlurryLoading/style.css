@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  margin: 0;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.bg {
+  background: no-repeat center center/cover url('https://images.unsplash.com/photo-1709884735626-63e92727d8b6?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZyZWUlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D');
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px);
+  filter: blur(0px);
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 50px;
+
+}
